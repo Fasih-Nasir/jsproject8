@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="q2()">Question:2</button>
+<button onclick="q3()">Question:3</button>
+<button onclick="q4()">Question:4</button>
+<script>
+  function q2(){
+    var fnum=+prompt("Ener First Value");
+   var snum=+prompt("Enter Second Value");
+    if(fnum < snum){
+        document.write(fnum + "<" +snum)
+    }
+    else if(snum < fnum){
+        document.write(snum +" <" +fnum)
+    }
+    else{
+        document.write("both Value Are Equal")
+    }
+  }
+
+  function q3(){
+    var q3=prompt("Enter a 0,+,-")
+    if(q3 == 0 ){
+        document.write("Num is ="+ q3)
+    }
+    else if(q3 > 0){
+document.write( "+")
+    }
+    else if(q3 < 0){
+document.write("-")
+    }
+    else{
+        document.write("Enter +,-,0 ")
+    }
+  }
+
+        
+  function q4(){
+    var cname=prompt("Enter Name")
+    var cpass=prompt("Enter Pass")
+    var namet=prompt("Enter username ")
+    var passt=prompt("Enter Account pass ")
+if(cname == namet || (cpass == passt)){
+    document.write("Correct userName"+"<br>")
+    document.write("Correct password")
+}  
+
+else{
+    document.write("Invalid Name or Pass")
+}
+}
+    </script>
+</body>
+</html>
